@@ -150,6 +150,8 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Home from "./Home";
 import NavBar from "./NavBar";
+import Game from "./Game";
+
 const App = () => {
   return (
     <>
@@ -158,6 +160,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/game" element={<Game />} />
       </Routes>
     </>
   );
