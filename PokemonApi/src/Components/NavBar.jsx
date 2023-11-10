@@ -17,8 +17,9 @@ const NavBar = () => {
         <li>
           <NavLink
             to="register"
-            style={({ isActive }) => ({ color: isActive && "red" })}
-            className="lists"
+            className={({ isActive }) =>
+              isActive ? "lists activeNavLink" : "lists"
+            }
           >
             Register
           </NavLink>
