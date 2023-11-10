@@ -1,36 +1,40 @@
-.ul {
-  display: flex;
-  justify-content: space-around;
-  gap: 1.5rem;
-  height: 3rem;
+.navbar {
   background-color: #6C79DB;
-  /* A vibrant blue, reminiscent of the Pokémon water type */
-  list-style: none;
-  padding-top: 1rem;
   border-bottom: 3px solid #FFCB05;
-  /* A bright yellow border, adding a Pokémon vibe */
+  padding: 0.5rem 1rem;
 }
 
-.lists {
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  background-color: transparent;
+}
+
+.nav-link {
   color: white;
   text-decoration: none;
   font-weight: bold;
   font-size: large;
   transition: color 0.3s ease-in-out;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
 }
 
-.lists:hover,
-.lists:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: #FFCB05;
-  /* Bright yellow on hover/focus for better interactivity */
   text-shadow: 1px 1px 2px black;
-  /* Adding a slight shadow for depth */
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Active NavLink styling */
-.activeNavLink {
+.active {
   color: #FF4444;
-  /* A bright red for active links */
   border-bottom: 2px solid #FF4444;
-  /* Underline effect for active link */
 }
